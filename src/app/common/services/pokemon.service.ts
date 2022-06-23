@@ -16,7 +16,7 @@ export class PokemonService {
   ) {
   }
 
-  pokemon(limit: number = 24, offset: number = 0): Observable<PokemonResponse> {
+  pokemon(limit: number = 100, offset: number = 0): Observable<PokemonResponse> {
     const pokemonStateKey = makeStateKey<PokemonResponse>(`pokemon-${limit}-${offset}`);
     const cached = this.transferState.get(pokemonStateKey, null);
 
