@@ -12,6 +12,10 @@
         {
           "key" : "x-robots-tag",
           "value" : "none"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "max-age=60"
         }
       ]
     }
