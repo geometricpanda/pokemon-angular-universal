@@ -1,0 +1,3 @@
+[build]
+command = "npm run build:ssr && npm run serve:ssr"
+publish = "dist/universal-app/browser"
