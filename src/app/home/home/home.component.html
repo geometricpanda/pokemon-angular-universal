@@ -1,0 +1,16 @@
+<div class="pokemon-grid">
+
+  <div class="pokemon" *ngFor="let pokemon of starterPokemon | async">
+    <div class="pokemon__image">
+      <img *ngIf="pokemon.sprites | firstSprite"
+           class="pokemon__img"
+           [src]="pokemon.sprites | firstSprite"
+           [alt]="pokemon.forms | firstName"
+      />
+    </div>
+    <div class="pokemon__info">
+      <h1 class="pokemon__name">{{pokemon.forms | firstName}}</h1>
+    </div>
+  </div>
+
+</div>
